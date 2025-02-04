@@ -146,3 +146,15 @@ function addToCart(product) {
 function updateCart() {
   localStorage.setItem('cartItems', JSON.stringify(cartItems)); // Зберігаємо кошик у localStorage
 }
+document.querySelectorAll('.product-card button').forEach(button => {
+  button.addEventListener('click', function () {
+    const card = button.closest('.product-card');
+    const product = {
+      name: card.querySelector('h3').innerText,
+      price: parseInt(card.querySelector('p strong').innerText),
+    };
+
+    addToCart(product);
+    alert(`${product.name} додано до кошика!`);
+  });
+});
