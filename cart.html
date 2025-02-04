@@ -24,9 +24,15 @@
   <!-- Кошик -->
   <section class="cart-section">
     <h2>Ваш кошик 🛒</h2>
-    <div id="cart-items"></div>
-    <p><strong>Загальна вартість:</strong> <span id="total-price">0 грн</span></p>
-    <button id="clear-cart" class="btn">Очистити кошик</button>
+    <div id="cart-items">
+      <!-- Тут будуть відображатися товари з кошика -->
+      <p>У вашому кошику поки що немає товарів.</p>
+    </div>
+
+    <div class="cart-total">
+      <h3>Загальна сума: <span id="cart-total">0 грн</span></h3>
+      <button class="btn" id="checkout-btn" disabled>Оформити замовлення</button>
+    </div>
   </section>
 
   <footer class="site-footer">
