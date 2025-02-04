@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адмін-кабінет</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="site-header">
+    <h1>Магазин "Gold Honey"</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="products.html">Товари</a></li>
+        <li><a href="contact.html">Контакти</a></li>
+        <li><a href="admin.html">Адмін-кабінет</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Форма входу -->
+  <section class="admin-login">
+    <h2>Вхід до адмін-кабінету</h2>
+    <form id="login-form">
+      <input type="email" id="admin-email" placeholder="Email" required>
+      <input type="password" id="admin-password" placeholder="Пароль" required>
+      <button type="submit" class="btn">Увійти</button>
+    </form>
+  </section>
+
+  <!-- Панель управління (при успішному вході) -->
+  <section id="admin-dashboard" style="display: none;">
+    <h2>Панель управління</h2>
+
+    <!-- Замовлення -->
+    <h3>Список замовлень</h3>
+    <div id="orders-list"></div>
+
+    <!-- Керування товарами -->
+    <h3>Керування товарами</h3>
+    <button id="add-product-btn" class="btn">Додати товар</button>
+    <div id="product-management"></div>
+  </section>
+
+  <!-- Підключений JavaScript -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
