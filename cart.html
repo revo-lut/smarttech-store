@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кошик</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Шапка сайту -->
+  <header class="site-header">
+    <h1>Магазин "Gold Honey"</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="about.html">Про нас</a></li>
+        <li><a href="products.html">Товари</a></li>
+        <li><a href="cart.html">Кошик</a></li>
+        <li><a href="contact.html">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Кошик -->
+  <section class="cart-section">
+    <h2>Ваш кошик 🛒</h2>
+    <div id="cart-items"></div>
+    <p><strong>Загальна вартість:</strong> <span id="total-price">0 грн</span></p>
+    <button id="clear-cart" class="btn">Очистити кошик</button>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2023 Gold Honey. Усі права захищені.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
